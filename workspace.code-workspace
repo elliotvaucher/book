@@ -36,14 +36,14 @@
 				{
 					"name": "Apprendre (build)",
 					"color": "white",
-					"command": "source .env/bin/activate; sphinx-build src/appr output -E",
+					"command": "source .env/bin/activate; sphinx-build src/appr docs -E",
 					"cwd": "${workspaceFolder}",
 					"singleInstance": true,
 				},
 				{
 					"name": "Enseigner (build)",
 					"color": "white",
-					"command": "source .env/bin/activate; sphinx-build src/ens output -E",
+					"command": "source .env/bin/activate; sphinx-build src/ens docs -E",
 					"cwd": "${workspaceFolder}",
 					"singleInstance": true,
 				},
