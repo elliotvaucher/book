@@ -290,13 +290,13 @@
 <p class="caption" role="heading"><span class="caption-text">Deuxième année</span></p>
 <ul>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../algo2/index.html">Algorithmique II</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../algo2/intro.html">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../algo2/principes.html">Terminaison et complexité</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../algo2/recherche.html">Algorithmes de recherche</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../algo2/tris.html">Algorithmes de tri</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../algo2/intro.html">1. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../algo2/principes.html">2. Terminaison et complexité</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../algo2/recherche.html">3. Algorithmes de recherche</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../algo2/tris.html">4. Algorithmes de tri</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../algo2/heuristiques.html">5. Algorithmes heuristiques</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../algo2/recursivite.html">4. Récursivité [en option]</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../algo2/conclusion.html">6. Conclusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../algo2/recursivite.html">6. Récursivité [en option]</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../algo2/conclusion.html">7. Conclusion</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../prog2/index.html">Programmation II</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -325,7 +325,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../projets/puissance4.html">2. Puissance 4</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projets/mines.html">3. Démineur</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projets/snake.html">4. Snake</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../projets/game_of_life.html">5. Game of life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projets/game_of_life.html">5. Game of Life</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projets/cartes.html">6. Poker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projets/tetris.html">7. Tetris</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projets/art_absurde.html">8. Art absurde</a></li>
@@ -380,7 +380,7 @@ encodés sous forme binaire par des 0 et des 1. Se pose alors la question
 de la représentation des caractères, ne serait-ce que parce que la communication
 entre les utilisateurs et les ordinateurs s’opère essentiellement sous forme textuelle.</p>
 <section id="principe">
-<h2>Principe<a class="headerlink" href="#principe" title="Lien permanent vers ce titre">¶</a></h2>
+<h2><span class="section-number">3.1. </span>Principe<a class="headerlink" href="#principe" title="Lien permanent vers ce titre">¶</a></h2>
 <p>La solution est simple : on associe chaque caractère à un code binaire.</p>
 <div class="table-wrapper"><table class="colwidths-auto docutils align-default">
 <thead>
@@ -487,7 +487,7 @@ de tables de conversion. Certaines tables ont été proposées à l’origine
 par des constructeurs d’ordinateurs ou des éditeurs de systèmes d’exploitation.</p>
 </section>
 <section id="table-ascii">
-<h2>Table ASCII<a class="headerlink" href="#table-ascii" title="Lien permanent vers ce titre">¶</a></h2>
+<h2><span class="section-number">3.2. </span>Table ASCII<a class="headerlink" href="#table-ascii" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Le code américain normalisé pour l’échange d’information ASCII (pour American Standard Code for Information Interchange) est apparu dans les année 1960.
 Malgré sa large acceptation, avec ses <strong>7 bits par caractère</strong>,
 cette table avait pour principal défaut de ne pas prendre en compte
@@ -517,7 +517,7 @@ au début des années 2000 à la mise en place d’une énorme table
 intégrant le contenu de toutes les tables existantes, via le standard UTF.</p>
 </section>
 <section id="standard-utf">
-<h2>Standard UTF<a class="headerlink" href="#standard-utf" title="Lien permanent vers ce titre">¶</a></h2>
+<h2><span class="section-number">3.3. </span>Standard UTF<a class="headerlink" href="#standard-utf" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Le <a class="reference external" href="https://home.unicode.org/">standard Unicode</a> UTF (Universal Character Set Transformation Format)
 s’est imposé pour l’échange, car il permet d’agréger sur 8 bits, 16 bits ou 32 bits par caractère la totalité des caractères utilisés dans toutes les langues humaines… et même extraterrestres,
 puisque le <a class="reference external" href="https://www.kli.org/about-klingon/klingon-history/">Klingon</a> est également intégré.</p>
@@ -568,7 +568,7 @@ L’encodage binaire UTF-8 global s’écrit donc, en concaténant les deux char
 </section>
 </section>
 <section id="exercices">
-<h2>Exercices<a class="headerlink" href="#exercices" title="Lien permanent vers ce titre">¶</a></h2>
+<h2><span class="section-number">3.4. </span>Exercices<a class="headerlink" href="#exercices" title="Lien permanent vers ce titre">¶</a></h2>
 <div class="note admonition">
 <p class="admonition-title">Exercice 2.4.1. - Utilisation de la table ASCII ✏️📒</p>
 <!--- <span style="color:orange">Niveau intermédiaire</span> -->
@@ -678,9 +678,9 @@ L’encodage binaire UTF-8 global s’écrit donc, en concaténant les deux char
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">3. Les caractères</a><ul>
-<li><a class="reference internal" href="#principe">Principe</a></li>
-<li><a class="reference internal" href="#table-ascii">Table ASCII</a></li>
-<li><a class="reference internal" href="#standard-utf">Standard UTF</a><ul>
+<li><a class="reference internal" href="#principe">3.1. Principe</a></li>
+<li><a class="reference internal" href="#table-ascii">3.2. Table ASCII</a></li>
+<li><a class="reference internal" href="#standard-utf">3.3. Standard UTF</a><ul>
 <li><a class="reference internal" href="#variantes">Variantes</a><ul>
 <li><a class="reference internal" href="#comment-sopere-le-codage-sur-plusieurs-octets">Comment s’opère le codage sur plusieurs octets ?</a></li>
 <li><a class="reference internal" href="#codage-utf-8-en-detail">Codage UTF-8 en détail</a></li>
@@ -688,7 +688,7 @@ L’encodage binaire UTF-8 global s’écrit donc, en concaténant les deux char
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#exercices">Exercices</a></li>
+<li><a class="reference internal" href="#exercices">3.4. Exercices</a></li>
 </ul>
 </li>
 </ul>

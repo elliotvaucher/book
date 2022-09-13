@@ -290,13 +290,13 @@
 <p class="caption" role="heading"><span class="caption-text">Deuxième année</span></p>
 <ul>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../algo2/index.html">Algorithmique II</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../algo2/intro.html">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../algo2/principes.html">Terminaison et complexité</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../algo2/recherche.html">Algorithmes de recherche</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../algo2/tris.html">Algorithmes de tri</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../algo2/intro.html">1. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../algo2/principes.html">2. Terminaison et complexité</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../algo2/recherche.html">3. Algorithmes de recherche</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../algo2/tris.html">4. Algorithmes de tri</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../algo2/heuristiques.html">5. Algorithmes heuristiques</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../algo2/recursivite.html">4. Récursivité [en option]</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../algo2/conclusion.html">6. Conclusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../algo2/recursivite.html">6. Récursivité [en option]</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../algo2/conclusion.html">7. Conclusion</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../prog2/index.html">Programmation II</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -325,7 +325,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../projets/puissance4.html">2. Puissance 4</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projets/mines.html">3. Démineur</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projets/snake.html">4. Snake</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../projets/game_of_life.html">5. Game of life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projets/game_of_life.html">5. Game of Life</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projets/cartes.html">6. Poker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projets/tetris.html">7. Tetris</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projets/art_absurde.html">8. Art absurde</a></li>
@@ -436,8 +436,7 @@
   ],
   "wires": [[0, 3], [1, 4], [0, 6], [1, 7], [5, 21], [8, 23]]
 }
-</script></logic-editor></div><p>Pour la suite, nous avons besoin de nous rappeler ceci. Lorsqu’un signal, disons <span class="math notranslate nohighlight">\(A\)</span>, passe à travers une porte logique <strong>ET</strong> dont la seconde entrée vaut 0, la sortie de cette porte-là sera toujours identique à 0. Cela nous permet ainsi d’annuler le signal <span class="math notranslate nohighlight">\(A\)</span>. De manière similaire, si cette seconde entrée vaut 1, le signal <span class="math notranslate nohighlight">\(A\)</span> passera tel quel. On peut ainsi voir la porte <strong>ET</strong> comme un annulateur de signal. Vérifiez ceci ici :</p>
-<!-- TODO the aux inputs constant once we can in the simulator and remove their names -->
+</script></logic-editor></div><p>Pour la suite, nous avons besoin de nous rappeler ceci. Lorsqu’un signal, disons <span class="math notranslate nohighlight">\(A\)</span>, passe à travers une porte logique <strong>ET</strong> dont la seconde entrée vaut 0 (ici affichée sans qu’on puisse la changer en cliquant dessus), la sortie de cette porte-là sera toujours identique à 0. Cela nous permet ainsi d’annuler le signal <span class="math notranslate nohighlight">\(A\)</span>. De manière similaire, si cette seconde entrée vaut 1, le signal <span class="math notranslate nohighlight">\(A\)</span> passera tel quel. On peut ainsi voir la porte <strong>ET</strong> comme un annulateur de signal. Vérifiez ceci ici :</p>
 <div class="logic-container" style="height: 190px;"><logic-editor mode="tryout">
 <script type="application/json">
 {
@@ -445,8 +444,8 @@
   "in": [
     {"pos": [50, 40], "id": 0, "name": "A", "val": 0},
     {"pos": [50, 130], "id": 1, "name": "A'", "val": 0},
-    {"pos": [130, 150], "id": 2, "name": "1", "val": 1},
-    {"pos": [130, 60], "id": 7, "name": "0", "val": 0}
+    {"pos": [130, 150], "id": 2, "val": 1, "isConstant": true},
+    {"pos": [130, 60], "id": 7, "val": 0, "isConstant": true}
   ],
   "out": [
     {"pos": [270, 50], "id": 8, "name": "A annulé"},
@@ -465,7 +464,7 @@
   "v": 1,
   "in": [
     {"pos": [50, 30], "id": 1, "name": "B", "val": 0},
-    {"pos": [130, 50], "id": 2, "name": "0", "val": 0}
+    {"pos": [130, 50], "id": 2, "val": 0, "isConstant": true}
   ],
   "out": [{"pos": [270, 40], "id": 12, "name": "B tel quel"}],
   "gates": [{"type": "OR", "pos": [200, 40], "in": [9, 10], "out": 11}],

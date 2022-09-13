@@ -1,15 +1,19 @@
-(histoire)=
-Histoire de l'informatique
-===========================
 
-Dans ce chapitre, nous proposons des activités que des propositions de calendrier (plans didactiques)
+(hist)=
+# Histoire de l'informatique
+
 
 ```{toctree}
-:maxdepth: 1
-:numbered: 1
-
-Activités <activ/index>
-Plan <plan_didac/index>
-Evaluation <eval/index>
+:maxdepth: 2
+:hidden:
+:numbered: 2
+main1
+portraits
+jeuxvideo
+machines
+notions
+technologies
+entreprises
 ```
 
+Le [musée bolo](https://www.museebolo.ch/)

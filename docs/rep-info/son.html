@@ -290,13 +290,13 @@
 <p class="caption" role="heading"><span class="caption-text">Deuxième année</span></p>
 <ul>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../algo2/index.html">Algorithmique II</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../algo2/intro.html">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../algo2/principes.html">Terminaison et complexité</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../algo2/recherche.html">Algorithmes de recherche</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../algo2/tris.html">Algorithmes de tri</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../algo2/intro.html">1. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../algo2/principes.html">2. Terminaison et complexité</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../algo2/recherche.html">3. Algorithmes de recherche</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../algo2/tris.html">4. Algorithmes de tri</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../algo2/heuristiques.html">5. Algorithmes heuristiques</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../algo2/recursivite.html">4. Récursivité [en option]</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../algo2/conclusion.html">6. Conclusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../algo2/recursivite.html">6. Récursivité [en option]</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../algo2/conclusion.html">7. Conclusion</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../prog2/index.html">Programmation II</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -325,7 +325,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../projets/puissance4.html">2. Puissance 4</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projets/mines.html">3. Démineur</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projets/snake.html">4. Snake</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../projets/game_of_life.html">5. Game of life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projets/game_of_life.html">5. Game of Life</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projets/cartes.html">6. Poker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projets/tetris.html">7. Tetris</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projets/art_absurde.html">8. Art absurde</a></li>
@@ -411,7 +411,7 @@
 </body>
 </div>
 <section id="numerisation">
-<h2>Numérisation<a class="headerlink" href="#numerisation" title="Lien permanent vers ce titre">¶</a></h2>
+<h2><span class="section-number">5.1. </span>Numérisation<a class="headerlink" href="#numerisation" title="Lien permanent vers ce titre">¶</a></h2>
 <p>La conversion d’une grandeur physique analogique continue – température, vitesse du vent, position d’une girouette, etc. – en données numériques digitales est appelée <strong>numérisation</strong>. Elle est réalisée en trois étapes : un <strong>échantillonnage</strong>, une <strong>quantification</strong> puis un <strong>encodage</strong>.</p>
 <p>Le processus de numérisation engendre une quantité d’information (des bits) qui vise à représenter, aussi précisément que nécessaire, la grandeur physique sous une forme manipulable par les ordinateurs.</p>
 <p>Il s’agit donc d’un compromis entre la qualité de la représentation et les coûts engendrés par un fichier plus grand, qui prend plus de place de stockage, plus de temps à copier, à transmettre sur un réseau et/ou nécessite une puissance de calcul plus importante pour la numérisation (conversion analogique/digitale) et pour la <strong>reconstruction</strong> (conversion digitale/analogique).</p>
@@ -426,7 +426,7 @@ par notre ouïe, résultent de la vibration de l’air, prenant la forme d’osc
 </div>
 </section>
 <section id="echantillonnage">
-<h2>Échantillonnage<a class="headerlink" href="#echantillonnage" title="Lien permanent vers ce titre">¶</a></h2>
+<h2><span class="section-number">5.2. </span>Échantillonnage<a class="headerlink" href="#echantillonnage" title="Lien permanent vers ce titre">¶</a></h2>
 <p>L’intervalle temporel entre deux mesures est appelé la période d’échantillonnage. La <strong>fréquence d’échantillonnage</strong> (sampling rate) est le nombre de mesures prises par seconde, exprimée en Hz.</p>
 <p>Les limites pratiques d’un échantillonnage sont fixées par la fréquence de Nyquist, qui, de façon très simplifiée, indique que l’information découlant d’un processus dont la fréquence est supérieure à la moitié de la fréquence d’échantillonnage sera perdue lors de la numérisation. Il ne sera donc jamais possible d’avoir une représentation complète d’un processus complexe, tout au mieux une représentation suffisante. Comme toute activité d’ingénierie, la solution retenue  résulte d’une pesée d’intérêts  et non d’une évidence  pointant  vers une solution unique.</p>
 <figure class="align-left">
@@ -445,7 +445,7 @@ une petite marge pour l’utilisation de filtres passe-bas lors de l’enregistr
 <p>Le choix de la fréquence d’échantillonnage résulte donc d’une délicate balance entre coûts (taille des données) et bénéfices (qualité de la numérisation).</p>
 </section>
 <section id="quantification">
-<h2>Quantification<a class="headerlink" href="#quantification" title="Lien permanent vers ce titre">¶</a></h2>
+<h2><span class="section-number">5.3. </span>Quantification<a class="headerlink" href="#quantification" title="Lien permanent vers ce titre">¶</a></h2>
 <p>La quantification d’une valeur échantillonnée requiert de déterminer la <strong>précision</strong> de chaque échantillon, ce qui détermine le volume de données générées. Cela découle de la <span class="xref myst">représentation des nombres</span> par les ordinateurs.</p>
 <p>La précision de l’encodage est donnée par la <strong>profondeur de l’échantillonnage</strong> (bit depth) exprimée en bits (binary digits). Comme pour l’échantillonnage, plus la profondeur de l’échantillonnage est importante, plus la quantité d’information générée est importante.</p>
 <figure class="align-left">
@@ -469,7 +469,7 @@ une petite marge pour l’utilisation de filtres passe-bas lors de l’enregistr
 <p>Les dispositifs électroniques dont la fonction est l’échantillonnage et la quantification des signaux sont appelés des convertisseurs analogique-numérique (CAN) ou <strong>analog to digital converter</strong> (ADC), en anglais.</p>
 </section>
 <section id="encodage">
-<h2>Encodage<a class="headerlink" href="#encodage" title="Lien permanent vers ce titre">¶</a></h2>
+<h2><span class="section-number">5.4. </span>Encodage<a class="headerlink" href="#encodage" title="Lien permanent vers ce titre">¶</a></h2>
 <p>L’encodage de l’information numérisée se fait dans des formats de fichiers spécifiques aux applications.</p>
 <p>Dans l’absolu, on pourrait imaginer un format universel de stockage de 0 et de 1. En connaissant la profondeur de l’échantillonnage, il serait aisément possible de reconstruire un signal. Toutefois, cela pose plusieurs problèmes.</p>
 <p>Cela ne donnerait aucune indication sur l’interprétation qu’il faut faire de ce signal (est-ce un son ? une image ? la variation de la vitesse du vent ?) ou même les bornes de ce signal (entre 0 et <span class="math notranslate nohighlight">\(2^n - 1\)</span> ? entre <span class="math notranslate nohighlight">\(-2^{(n-1)}\)</span> et <span class="math notranslate nohighlight">\(2^{(n-1)} - 1\)</span> ?).</p>
@@ -478,7 +478,7 @@ une petite marge pour l’utilisation de filtres passe-bas lors de l’enregistr
 <p>Par exemple, la reproduction exacte des nuances de bleu du ciel importe peu pour un film d’action. Pourtant, ces mêmes nuances sont essentielles pour la reproduction d’un tableau de Monnet…</p>
 </section>
 <section id="reconstruction">
-<h2>Reconstruction<a class="headerlink" href="#reconstruction" title="Lien permanent vers ce titre">¶</a></h2>
+<h2><span class="section-number">5.5. </span>Reconstruction<a class="headerlink" href="#reconstruction" title="Lien permanent vers ce titre">¶</a></h2>
 <p>On appelle <strong>reconstruction</strong> le processus qui transforme un signal numérisé en une variation continue d’une grandeur physique.</p>
 <p>Les dispositifs électroniques dont la fonction est la reconstruction des signaux sont appelés des convertisseurs numérique-analogique (CNA) ou <strong>digital to analog converter</strong> (DAC), en anglais. La sortie du convertisseur est généralement une tension électrique proportionnelle à l’intensité du signal.</p>
 </section>
@@ -533,11 +533,11 @@ une petite marge pour l’utilisation de filtres passe-bas lors de l’enregistr
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">5. Le son</a><ul>
-<li><a class="reference internal" href="#numerisation">Numérisation</a></li>
-<li><a class="reference internal" href="#echantillonnage">Échantillonnage</a></li>
-<li><a class="reference internal" href="#quantification">Quantification</a></li>
-<li><a class="reference internal" href="#encodage">Encodage</a></li>
-<li><a class="reference internal" href="#reconstruction">Reconstruction</a></li>
+<li><a class="reference internal" href="#numerisation">5.1. Numérisation</a></li>
+<li><a class="reference internal" href="#echantillonnage">5.2. Échantillonnage</a></li>
+<li><a class="reference internal" href="#quantification">5.3. Quantification</a></li>
+<li><a class="reference internal" href="#encodage">5.4. Encodage</a></li>
+<li><a class="reference internal" href="#reconstruction">5.5. Reconstruction</a></li>
 </ul>
 </li>
 </ul>

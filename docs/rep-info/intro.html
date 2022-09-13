@@ -290,13 +290,13 @@
 <p class="caption" role="heading"><span class="caption-text">Deuxième année</span></p>
 <ul>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../algo2/index.html">Algorithmique II</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../algo2/intro.html">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../algo2/principes.html">Terminaison et complexité</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../algo2/recherche.html">Algorithmes de recherche</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../algo2/tris.html">Algorithmes de tri</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../algo2/intro.html">1. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../algo2/principes.html">2. Terminaison et complexité</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../algo2/recherche.html">3. Algorithmes de recherche</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../algo2/tris.html">4. Algorithmes de tri</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../algo2/heuristiques.html">5. Algorithmes heuristiques</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../algo2/recursivite.html">4. Récursivité [en option]</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../algo2/conclusion.html">6. Conclusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../algo2/recursivite.html">6. Récursivité [en option]</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../algo2/conclusion.html">7. Conclusion</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../prog2/index.html">Programmation II</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -325,7 +325,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../projets/puissance4.html">2. Puissance 4</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projets/mines.html">3. Démineur</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projets/snake.html">4. Snake</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../projets/game_of_life.html">5. Game of life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projets/game_of_life.html">5. Game of Life</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projets/cartes.html">6. Poker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projets/tetris.html">7. Tetris</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projets/art_absurde.html">8. Art absurde</a></li>
@@ -384,28 +384,28 @@
 <p>Une des questions centrales de ce chapitre est d’identifier les caractéristiques de la transformation appliquée au réel donnant une représentation suffisamment précise pour permettre aux ordinateurs de la <span class="target" id="gl-traitement-0"></span><span class="glossary-ref" data-definition="PHA+TGUgdHJhaXRlbWVudCBkZSBs4oCZaW5mb3JtYXRpb24gcmFzc2VtYmxlIHRvdXRlcyBsZXMgb3DDqXJhdGlvbnMgcXVlIGzigJlvbiBwZXV0IGZhaXJlIHN1YmlyIMOgIHVuZSBpbmZvcm1hdGlvbiBwb3VyIGxhIHN0b2NrZXIsIHRyYW5zZm9ybWVyLCBjb21wcmVzc2VyLCBkdXBsaXF1ZXIsIGV0IGFpbnNpIGRlIHN1aXRlLjwvcD4K" data-entry-name="VHJhaXRlbWVudA==" data-glossary-uri="../glossaire.html#gl-def-traitement-1" data-number="1">traiter</span> de manière fiable.</p>
 <p>Mais avant de découvrir le code choisi pour représenter l’information à l’intérieur d’un ordinateur, passons en revue un certain nombre d’alphabets et de systèmes de représentation de l’information qui ont été utilisés au cours de l’histoire.</p>
 <section id="alphabets-et-systemes-de-communication">
-<h2>Alphabets et systèmes de communication<a class="headerlink" href="#alphabets-et-systemes-de-communication" title="Lien permanent vers ce titre">¶</a></h2>
+<h2><span class="section-number">1.1. </span>Alphabets et systèmes de communication<a class="headerlink" href="#alphabets-et-systemes-de-communication" title="Lien permanent vers ce titre">¶</a></h2>
 <section id="alphabets-anciens-et-traditionnels">
 <h3>Alphabets anciens et traditionnels<a class="headerlink" href="#alphabets-anciens-et-traditionnels" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Depuis qu’elle existe, l’espèce humaine a créé de nombreux alphabets, ainsi que de nombreux <span class="target" id="gl-sysco-0"></span><span class="glossary-ref" data-definition="PHA+VW4gc3lzdMOobWUgZGUgY29tbXVuaWNhdGlvbiBlc3QgdW4gZW5zZW1ibGUgZOKAmW91dGlscywgZGUgcHJvdG9jb2xlcywgZGUgY29udmVudGlvbnMsIHBlcm1ldHRhbnQgw6AgZGV1eCBvdSBwbHVzaWV1cnMgw6p0cmVzIGh1bWFpbnMgb3UgbWFjaGluZXMgZGUgY29tbXVuaXF1ZXIgZW50cmUgZXV4L2VsbGVzLjwvcD4K" data-entry-name="U3lzdMOobWUgZGUgY29tbXVuaWNhdGlvbg==" data-glossary-uri="../glossaire.html#gl-def-sysco-1" data-number="1">systèmes de communication</span>. Depuis les <a class="reference external" href="https://fr.wikipedia.org/wiki/Sum%C3%A9rien">sumériens</a> qui utilisaient des <span class="target" id="gl-picto-0"></span><span class="glossary-ref" data-definition="PHA+VW7CoHBpY3RvZ3JhbW1lLCDDqWdhbGVtZW50IGFwcGVsw6nCoHBpY3RvZ3JhcGhlLCBlc3QgdW5lwqByZXByw6lzZW50YXRpb24gZ3JhcGhpcXVlwqBzY2jDqW1hdGlxdWUsIHVuIGRlc3NpbiBmaWd1cmF0aWYgc3R5bGlzw6kgYXlhbnQgZm9uY3Rpb24gZGXCoHNpZ25lLjwvcD4K" data-entry-name="UGljdG9ncmFtbWVz" data-glossary-uri="../glossaire.html#gl-def-picto-1" data-number="1">pictogrammes</span> et <a class="reference external" href="https://fr.wikipedia.org/wiki/Cun%C3%A9iforme">l’écriture cunéiforme</a>, en passant par les égyptiens et leurs <a class="reference external" href="https://fr.wikipedia.org/wiki/%C3%89criture_hi%C3%A9roglyphique_%C3%A9gyptienne">hiéroglyphes</a>, les chinois et leurs <a class="reference external" href="https://fr.wikipedia.org/wiki/Caract%C3%A8res_chinois">idéogrammes</a> pour arriver aux symboles de nos alphabets actuels, l’espèce humaine n’a eu de cesse de mettre au point des systèmes pour représenter l’information et la <span class="target" id="gl-transmission-1"></span><span class="glossary-ref" data-definition="PHA+RW4gaW5mb3JtYXRpcXVlLCBsYSB0cmFuc21pc3Npb24gZGUgbOKAmWluZm9ybWF0aW9uIGVzdCBs4oCZb3DDqXJhdGlvbiBwYXIgbGFxdWVsbGUgZGVzIGJpdHMgc29udCBlbnZvecOpcyBk4oCZdW4gZW5kcm9pdCDDoCB1biBhdXRyZSBzdXIgdGVycmUsIG91IHBsdXMgc2ltcGxlbWVudCBk4oCZdW4gYXBwYXJlaWwgw6AgdW4gYXV0cmUsIG91IGTigJl1biBwcm9ncmFtbWUgw6AgdW4gYXV0cmUuPC9wPgo=" data-entry-name="VHJhbnNtaXNzaW9u" data-glossary-uri="../glossaire.html#gl-def-transmission-1" data-number="1">transmettre</span>.</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="9cfed27c-5d3d-4eac-90e3-9b4e7d5889f4" name="fff8fe77-b68e-4dc5-9775-384e3448d5bc" type="radio"/>
-<label class="tabbed-label" for="9cfed27c-5d3d-4eac-90e3-9b4e7d5889f4">
+<input checked="checked" id="c73c66f4-9894-4258-b786-77a716b23272" name="62c39242-4e2a-435b-ae24-eb2f6da6d3b3" type="radio"/>
+<label class="tabbed-label" for="c73c66f4-9894-4258-b786-77a716b23272">
 Sumérien</label><div class="tabbed-content docutils">
 <a class="reference internal image-reference" href="../_images/cuneiform.jpg"><img alt="../_images/cuneiform.jpg" src="../_images/cuneiform.jpg" style="width: 500px; height: 350px;"/></a>
 </div>
-<input id="8446cc88-ec96-4ab9-83b8-2d92e2e59031" name="fff8fe77-b68e-4dc5-9775-384e3448d5bc" type="radio"/>
-<label class="tabbed-label" for="8446cc88-ec96-4ab9-83b8-2d92e2e59031">
+<input id="384e6ae7-f739-40a2-b73d-8e5e74c2abba" name="62c39242-4e2a-435b-ae24-eb2f6da6d3b3" type="radio"/>
+<label class="tabbed-label" for="384e6ae7-f739-40a2-b73d-8e5e74c2abba">
 Égyptien</label><div class="tabbed-content docutils">
 <a class="reference internal image-reference" href="../_images/hieroglyphs.jpg"><img alt="../_images/hieroglyphs.jpg" src="../_images/hieroglyphs.jpg" style="width: 500px; height: 350px;"/></a>
 </div>
-<input id="32e02638-334b-497c-8269-a422bb832489" name="fff8fe77-b68e-4dc5-9775-384e3448d5bc" type="radio"/>
-<label class="tabbed-label" for="32e02638-334b-497c-8269-a422bb832489">
+<input id="67124c6d-5b9e-43ee-bb90-2cf9e0f2622a" name="62c39242-4e2a-435b-ae24-eb2f6da6d3b3" type="radio"/>
+<label class="tabbed-label" for="67124c6d-5b9e-43ee-bb90-2cf9e0f2622a">
 Chinois</label><div class="tabbed-content docutils">
 <a class="reference internal image-reference" href="../_images/chinois.gif"><img alt="../_images/chinois.gif" src="../_images/chinois.gif" style="width: 500px; height: 350px;"/></a>
 </div>
-<input id="73837323-22fb-44e4-bad1-29d54a82d90b" name="fff8fe77-b68e-4dc5-9775-384e3448d5bc" type="radio"/>
-<label class="tabbed-label" for="73837323-22fb-44e4-bad1-29d54a82d90b">
+<input id="af4629bc-8a60-42c7-9f21-c15be5688a7b" name="62c39242-4e2a-435b-ae24-eb2f6da6d3b3" type="radio"/>
+<label class="tabbed-label" for="af4629bc-8a60-42c7-9f21-c15be5688a7b">
 Synoptique</label><div class="tabbed-content docutils">
 <a class="reference internal image-reference" href="../_images/evolution.jpg"><img alt="../_images/evolution.jpg" src="../_images/evolution.jpg" style="width: 500px; height: 350px;"/></a>
 </div>
@@ -573,7 +573,7 @@ suffisamment grand pour être identifiables à longue distance. Une torche pouva
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">1. Introduction</a><ul>
-<li><a class="reference internal" href="#alphabets-et-systemes-de-communication">Alphabets et systèmes de communication</a><ul>
+<li><a class="reference internal" href="#alphabets-et-systemes-de-communication">1.1. Alphabets et systèmes de communication</a><ul>
 <li><a class="reference internal" href="#alphabets-anciens-et-traditionnels">Alphabets anciens et traditionnels</a></li>
 <li><a class="reference internal" href="#le-carre-de-polybe">Le carré de Polybe</a></li>
 <li><a class="reference internal" href="#le-telegraphe-de-chappe">Le télégraphe de Chappe</a></li>

@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Recherche" href="../search.html" /><link rel="next" title="4. Récursivité [en option]" href="recursivite.html" /><link rel="prev" title="Algorithmes de tri" href="tris.html" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Recherche" href="../search.html" /><link rel="next" title="6. Récursivité [en option]" href="recursivite.html" /><link rel="prev" title="4. Algorithmes de tri" href="tris.html" />
 
     <link rel="shortcut icon" href="../_static/modulo-icon.ico"/><meta name="generator" content="sphinx-4.2.0, furo 2021.10.09"/>
         <title>5. Algorithmes heuristiques - Apprendre</title>
@@ -290,13 +290,13 @@
 <p class="caption" role="heading"><span class="caption-text">Deuxième année</span></p>
 <ul class="current">
 <li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Algorithmique II</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="intro.html">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="principes.html">Terminaison et complexité</a></li>
-<li class="toctree-l2"><a class="reference internal" href="recherche.html">Algorithmes de recherche</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tris.html">Algorithmes de tri</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html">1. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="principes.html">2. Terminaison et complexité</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recherche.html">3. Algorithmes de recherche</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tris.html">4. Algorithmes de tri</a></li>
 <li class="toctree-l2 current current-page"><a class="current reference internal" href="#">5. Algorithmes heuristiques</a></li>
-<li class="toctree-l2"><a class="reference internal" href="recursivite.html">4. Récursivité [en option]</a></li>
-<li class="toctree-l2"><a class="reference internal" href="conclusion.html">6. Conclusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recursivite.html">6. Récursivité [en option]</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conclusion.html">7. Conclusion</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../prog2/index.html">Programmation II</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -325,7 +325,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../projets/puissance4.html">2. Puissance 4</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projets/mines.html">3. Démineur</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projets/snake.html">4. Snake</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../projets/game_of_life.html">5. Game of life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projets/game_of_life.html">5. Game of Life</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projets/cartes.html">6. Poker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projets/tetris.html">7. Tetris</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projets/art_absurde.html">8. Art absurde</a></li>
@@ -374,7 +374,7 @@
         </div>
         <article role="main">
           <section class="tex2jax_ignore mathjax_ignore" id="algorithmes-heuristiques">
-<h1>5. Algorithmes heuristiques<a class="headerlink" href="#algorithmes-heuristiques" title="Lien permanent vers ce titre">¶</a></h1>
+<h1><span class="section-number">5. </span>Algorithmes heuristiques<a class="headerlink" href="#algorithmes-heuristiques" title="Lien permanent vers ce titre">¶</a></h1>
 <div class="attention admonition">
 <p class="admonition-title">Matière à réfléchir. Tour du monde</p>
 <p>Vous avez décidé de faire le tour du monde. Choisissez cinq pays que vous souhaitez visiter et placez-les sur une carte. Essayez de trouver le meilleur itinéraire pour visiter ces cinq pays.</p>
@@ -384,7 +384,7 @@
 <p>Si le calcul d’un itinéraire prenait 1 milliseconde, combien de temps faudrait-il pour trouver la meilleure solution en énumérant toutes les solutions possibles ? Pour comparaison, le nombre d’atomes dans l’univers est d’ordre 10<sup>80</sup>.</p>
 </div>
 <section id="complexite-exponentielle">
-<h2>5.0. Complexité exponentielle<a class="headerlink" href="#complexite-exponentielle" title="Lien permanent vers ce titre">¶</a></h2>
+<h2><span class="section-number">5.1. </span>Complexité exponentielle<a class="headerlink" href="#complexite-exponentielle" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Il existe des problèmes difficiles à résoudre. Nous allons nous pencher sur un problème qui s’appelle le <strong><span style="color:rgb(89, 51, 209)">problème du sac à dos</span></strong>. Prenons un sac à dos et une multitude d’objets qui ont chacun un poids. Notre objectif est de choisir les objets à mettre dans le sac à dos pour le remplir au maximum, mais sans dépasser sa capacité. Donc la question que l’on se pose est la suivante : quels objets devrions-nous emporter, sans dépasser le poids maximal que le sac à dos peut contenir ?</p>
 <div class="note admonition">
 <p class="admonition-title">Exercice 5.0. Le problème du sac à dos</p>
@@ -557,7 +557,7 @@
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">4. Récursivité [en option]</div>
+                <div class="title"><span class="section-number">6. </span>Récursivité [en option]</div>
               </div>
               <svg><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -568,7 +568,7 @@
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Algorithmes de tri</div>
+                <div class="title"><span class="section-number">4. </span>Algorithmes de tri</div>
                 
               </div>
             </a>
@@ -596,7 +596,7 @@
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">5. Algorithmes heuristiques</a><ul>
-<li><a class="reference internal" href="#complexite-exponentielle">5.0. Complexité exponentielle</a></li>
+<li><a class="reference internal" href="#complexite-exponentielle">5.1. Complexité exponentielle</a></li>
 </ul>
 </li>
 </ul>

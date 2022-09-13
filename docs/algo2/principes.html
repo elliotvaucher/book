@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Recherche" href="../search.html" /><link rel="next" title="Algorithmes de recherche" href="recherche.html" /><link rel="prev" title="Introduction" href="intro.html" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Recherche" href="../search.html" /><link rel="next" title="3. Algorithmes de recherche" href="recherche.html" /><link rel="prev" title="1. Introduction" href="intro.html" />
 
     <link rel="shortcut icon" href="../_static/modulo-icon.ico"/><meta name="generator" content="sphinx-4.2.0, furo 2021.10.09"/>
-        <title>Terminaison et complexité - Apprendre</title>
+        <title>2. Terminaison et complexité - Apprendre</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=0254c309f5cadf746f1a613e7677379ac9c8cdcd" />
     <link rel="stylesheet" type="text/css" href="../_static/codeplay.css" />
@@ -290,13 +290,13 @@
 <p class="caption" role="heading"><span class="caption-text">Deuxième année</span></p>
 <ul class="current">
 <li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Algorithmique II</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="intro.html">Introduction</a></li>
-<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Terminaison et complexité</a></li>
-<li class="toctree-l2"><a class="reference internal" href="recherche.html">Algorithmes de recherche</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tris.html">Algorithmes de tri</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html">1. Introduction</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">2. Terminaison et complexité</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recherche.html">3. Algorithmes de recherche</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tris.html">4. Algorithmes de tri</a></li>
 <li class="toctree-l2"><a class="reference internal" href="heuristiques.html">5. Algorithmes heuristiques</a></li>
-<li class="toctree-l2"><a class="reference internal" href="recursivite.html">4. Récursivité [en option]</a></li>
-<li class="toctree-l2"><a class="reference internal" href="conclusion.html">6. Conclusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recursivite.html">6. Récursivité [en option]</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conclusion.html">7. Conclusion</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../prog2/index.html">Programmation II</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -325,7 +325,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../projets/puissance4.html">2. Puissance 4</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projets/mines.html">3. Démineur</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projets/snake.html">4. Snake</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../projets/game_of_life.html">5. Game of life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../projets/game_of_life.html">5. Game of Life</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projets/cartes.html">6. Poker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projets/tetris.html">7. Tetris</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projets/art_absurde.html">8. Art absurde</a></li>
@@ -374,7 +374,7 @@
         </div>
         <article role="main">
           <section class="tex2jax_ignore mathjax_ignore" id="terminaison-et-complexite">
-<h1>Terminaison et complexité<a class="headerlink" href="#terminaison-et-complexite" title="Lien permanent vers ce titre">¶</a></h1>
+<h1><span class="section-number">2. </span>Terminaison et complexité<a class="headerlink" href="#terminaison-et-complexite" title="Lien permanent vers ce titre">¶</a></h1>
 <div class="attention admonition">
 <p class="admonition-title">Matière à réfléchir. Compte à rebours</p>
 <p>Voici une version naïve du compte à rebours des secondes pour le passage du Nouvel An :</p>
@@ -383,7 +383,7 @@
 <p>Qu’arrive-t-il lorsque l’on exécute la nouvelle version du  programme avec  la valeur -10 en entrée ou <code class="docutils literal notranslate"><span class="pre">compte_a_rebours(-10)</span></code> ?</p>
 </div>
 <section id="principe-de-terminaison">
-<h2>Principe de terminaison<a class="headerlink" href="#principe-de-terminaison" title="Lien permanent vers ce titre">¶</a></h2>
+<h2><span class="section-number">2.1. </span>Principe de terminaison<a class="headerlink" href="#principe-de-terminaison" title="Lien permanent vers ce titre">¶</a></h2>
 <p>La <strong><span style="color:rgb(89, 51, 209)">terminaison</span></strong> est une propriété essentielle des <span class="target" id="gl-algo-0"></span><span class="glossary-ref" data-definition="PHA+QWxnbzwvcD4K" data-entry-name="QWxnb3JpdGhtZQ==" data-glossary-uri="../glossaire.html#gl-def-algo-1" data-number="1">algorithmes</span>, qui garantit que les calculs de l’algorithme finiront par s’arrêter. Lorsque l’on conçoit un algorithme, il est important de faire en sorte que les calculs s’arrêtent à un moment donné. Cette garantie doit tenir pour toutes les entrées possibles. Voici un exemple d’algorithme qui compte et qui ne se termine pas :</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span> # Algorithme qui compte infini 
  Variable i : numérique
@@ -462,7 +462,7 @@
 </div>
 </section>
 <section id="principe-de-complexite">
-<h2>Principe de complexité<a class="headerlink" href="#principe-de-complexite" title="Lien permanent vers ce titre">¶</a></h2>
+<h2><span class="section-number">2.2. </span>Principe de complexité<a class="headerlink" href="#principe-de-complexite" title="Lien permanent vers ce titre">¶</a></h2>
 <div class="attention admonition">
 <p class="admonition-title">Matière à réfléchir. Record de vitesse</p>
 <p>On souhaite comparer deux algorithmes qui permettent de résoudre le même problème, afin d’utiliser l’algorithme qui permet de résoudre le problème plus rapidement. Mais comment pourrait‑on calculer la vitesse d’un algorithme ?</p>
@@ -496,7 +496,7 @@
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Algorithmes de recherche</div>
+                <div class="title"><span class="section-number">3. </span>Algorithmes de recherche</div>
               </div>
               <svg><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -507,7 +507,7 @@
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Introduction</div>
+                <div class="title"><span class="section-number">1. </span>Introduction</div>
                 
               </div>
             </a>
@@ -534,9 +534,9 @@
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">Terminaison et complexité</a><ul>
-<li><a class="reference internal" href="#principe-de-terminaison">Principe de terminaison</a></li>
-<li><a class="reference internal" href="#principe-de-complexite">Principe de complexité</a></li>
+<li><a class="reference internal" href="#">2. Terminaison et complexité</a><ul>
+<li><a class="reference internal" href="#principe-de-terminaison">2.1. Principe de terminaison</a></li>
+<li><a class="reference internal" href="#principe-de-complexite">2.2. Principe de complexité</a></li>
 </ul>
 </li>
 </ul>
